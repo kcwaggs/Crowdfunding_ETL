@@ -1,7 +1,7 @@
 "campaign"
 -
 cf_id int pk
-contact_id int
+contact_id int FK >- contacts.contact_id
 company_name varchar(60)
 description varchar(60)
 goal float
@@ -12,22 +12,22 @@ country varchar(2)
 currency varchar(3)
 launched_date date
 end_date date
-category_id varchar(4)
-subcategory_id varchar(8)
+category_id varchar(4) FK >- category.category_id
+subcategory_id varchar(8) FK >- subcategory.subcategory_id
 
 "category"
 -
-category_id varchar(4) pk fk >- campaign.category_id
+category_id varchar(4) pk
 category varchar(30)
 
 "contacts"
 -
-contact_id int pk fk >- campaign.contact_id
+contact_id int pk
 first_name varchar(30)
 last_name varchar(30)
 email varchar(60)
 
 "subcategory"
 -
-subcategory_id varchar(8) pk fk >- campaign.subcategory_id
+subcategory_id varchar(8) pk
 subcategory varchar(30)
