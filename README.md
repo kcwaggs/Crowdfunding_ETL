@@ -1,6 +1,15 @@
 # Crowdfunding_ETL
-Project 2
+Project 2:
+Notes: 
+-The 'quickDBD_resources' folder contains the ERD (screenshot PNG as well as a text file used for the creadtion of the diagram).
 
+-The 'schema_screenshot' folder contains screenshots of the databases (campaign, contacts, category, subcategory).
+
+-'ETL_Mini_Project_AAsad_CWaggoner.ipynb' contains the Jupyter Notebook code.
+
+-'crowdfunding_db_schema.sql' contains the SQL code.
+
+Project 2 Instructions:
 Create the Category and Subcategory DataFrames
 Extract and transform the crowdfunding.xlsx Excel data to create a category DataFrame that has the following columns:
 
